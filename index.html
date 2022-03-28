@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>4.16민주시민교육원</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">	
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/all.min.js"></script>
+	<script src="js/basic.js"></script>
+	<script src="js/common.js"></script>
+</head>
+<body>
+	<div id="wrap">
+		<header class="header">
+			<div class="gnb">
+				<h1><a href="#a" title="인트로 페이지로 이동" class="logo">4.16 민주시민교육원</a></h1>
+				<nav class="header-menu">
+					<ul>
+						<li class="first"> <a href="#a"><span>교육과정</span></a>
+							<ul class="gnb-sub">   
+								<li class="first"><a href="#a"><span>교육과정안내</span></a></li>
+								<li><a href="#a"><span>교육프로그램</span></a></li>
+								<li><a href="#a"><span>교육신청</span></a></li>
+							</ul> 
+						</li> 
+						<li> <a href="#a"><span>기록과 기억</span></a>
+							<ul class="gnb-sub">   
+								<li class="first"><a href="#a"><span>단원고 4.16 기억교실</span></a></li>
+								<li><a href="#a"><span>온라인 기억교실</span></a></li>
+								<li><a href="#a"><span>기억교실 방문</span></a></li>
+								<li><a href="#a"><span>기억노트</span></a></li>
+							</ul> 
+						</li> 
+						<li> <a href="#a"><span>소식과 자료</span></a>
+							<ul class="gnb-sub">   
+								<li class="first"><a href="#a"><span>웹진 바람대로</span></a></li>
+								<li><a href="#a"><span>공지사항</span></a></li>
+								<li><a href="#a"><span>자료실</span></a></li>
+								<li><a href=#a"><span>정보공개</span></a></li>
+							</ul> 
+						</li> 
+						<li> <a href="#a"><span>교육원 소개</span></a>
+							<ul class="gnb-sub">   
+								<li class="first"><a href="#a"><span>인사말</span></a></li>
+								<li><a href="#a"><span>설립과정</span></a></li>
+								<li><a href="#a"><span>운영방향</span></a></li>
+								<li><a href="#a"><span>교육원 BI</span></a></li>
+								<li><a href="#a"><span>조직 및 업무</span></a></li>
+								<li><a href="#a"><span>시설안내</span></a></li>
+								<li><a href="#a"><span>찾아오시는길</span></a></li>
+							</ul> 
+						</li>											
+					</ul>
+					<div class="header-sns">
+						<ul>
+							<li><a href="#a" title="새창으로 이동" target="_blank"><i class="xi-facebook"></i><em class="pos">페이스북</em></a></li>
+							<li><a href="#a" title="새창으로 이동" target="_blank"><i class="xi-instagram"></i><em class="pos">인스타그램</em></a></li>
+							<li><a href="#a" title="새창으로 이동" target="_blank"><i class="xi-naver"></i><em class="pos">네이버 블로그</em></a></li>
+							<li><a href="#a" title="새창으로 이동" target="_blank"><i class="xi-youtube-play"></i><em class="pos">유튜브</em></a></li>
+						</ul>
+					</div>
+					<div class="gnb-sub-bg"></div>
+				</nav>	
+				<div class="utill">
+					<div class="zoom">
+						<button type="button" id="resizeSmall" title="글씨 크기 축소" onclick="zoomOut()" onfocus="$('header').removeClass('on');" tabindex="2"><i class="xi-minus-thin"></i><em class="pos">축소</em></button>
+						<span>가</span>
+						<button type="button" id="resizeBig" title="글씨 크기 확대" onclick="zoomIn()" tabindex="2"><i class="xi-plus-thin"></i><em class="pos">확대</em></button>
+					</div>
+					<div class="lang">
+						<a href="#a" class="on">KOR</a>
+						<a href="#a">ENG</a>
+					</div>	
+					<button class="search-btn">
+						<img src="images/magnifying-glass-solid.svg" alt="검색">	
+					</button>	
+					<div class="gnb-all">
+						<input type="button" id="hamB" title="전체메뉴 열기" class="hidden" style="opacity:0;">
+						<label for="hamB" class="gnb-all-btn" title="메뉴열기,닫기">
+							<span></span>
+							<span></span>
+						</label>
+					</div>	
+				</div>			
+			</div>
+			<div class="header-search-wrap">
+				<div class="header-search">
+					<form name="headerSearch" id="headerSearch">
+					<fieldset>
+						<legend class="pos">통합검색</legend>
+						<input type="hidden" name="p" value="41">
+						<label for="total_sc" class="pos">통합검색</label>
+						<input type="text" id="total_sc" placeholder="검색어를 입력하세요." name="headerSearchTxt" title="검색어 입력" tabindex="2">
+						<button title="검색"><svg class="svg-inline--fa fa-magnifying-glass fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="magnifying-glass" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"></path></svg><!-- <i class="fas fa-search" aria-hidden="true"></i> --></button>
+					</fieldset>
+					</form>
+					<button type="button" class="header-search-close" title="검색창 닫기"><i class="xi-close-thin"></i></button>
+				</div>
+				<div class="header-search-bg"></div>
+			</div>
+			<div class="dim_bg"></div>		
+		</header>
+		<section id="container">
+			<div class="contents" style="height:1500px;">contents</div>
+		</section>
+		<footer>
+			<div class="in">
+				<div class="footer-top">
+					<ul>
+						<li><a href="#a" class="privacy" id="privacyBtn">개인정보처리방침</a></li>
+						<li><a href="#a">저작권 정책</a></li>
+						<li><a href="#a">사이트맵</a></li>
+					</ul>
+					<div class="footer-sns">
+						<ul>
+							<li><a href="#a" title="새창으로 이동" target="_blank"><i class="xi-facebook"></i><em class="pos">페이스북</em></a></li>
+							<li><a href="#a" title="새창으로 이동" target="_blank"><i class="xi-instagram"></i><em class="pos">인스타그램</em></a></li>
+							<li><a href="#a" title="새창으로 이동" target="_blank"><i class="xi-naver"></i><em class="pos">네이버 블로그</em></a></li>
+							<li><a href="#a" title="새창으로 이동" target="_blank"><i class="xi-youtube-play"></i><em class="pos">유튜브</em></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-last">
+					<a href="#a">4.16 민주시민교육원</a>
+					<div class="co_info">
+						<div class="address">
+							<ul>
+								<li>15354 경기 안산시 단원구 적금로 134</li>
+								<li><span>T</span> 031-229-7653</li>
+								<li><span>F</span> 031-229-7679</li>						
+							</ul>	
+						</div>
+						<p>단원고 4.16 기억교실 방문 <span>T</span> 031-414-0416</p>
+						<span>© 4.16민주시민교육원</span>
+					</div>
+					<ul class="mark">
+						<li class="mark-access"><a href="#a"><img src="images/WA_Mark.svg" alt=""></a></li>
+						<li class="mark-open"><a href="#a"><img src="images/open.png" alt=""></a></li>
+						<li class="mark-iaward"><a href="#a"><img src="images/WA2021_winner.svg" alt=""></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="top-btn-wrap" style="display:none;">
+				<a href="#full1" class="top-btn" title="맨 위로 이동하기">
+					<span><svg class="svg-inline--fa fa-arrow-up fa-w-12" aria-hidden="true" focusable="false" data-prefix="fa-thin" data-icon="arrow-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M15.82 204.9l170.5-170.5c3.14-3.14 8.226-3.14 11.37 0l170.5 170.5c3.14 3.14 3.14 8.226 0 11.37c-3.14 3.14-8.226 3.14-11.37 0L200 59.44v412.5c0 4.427-3.595 8.038-8.037 8.038S183.1 476.4 183.1 471.1V59.44L27.19 216.2c-3.14 3.14-8.226 3.14-11.37 0C12.68 213.1 12.68 207.1 15.82 204.9z"></path></svg><!-- <i class="fa-thin fa-arrow-up"></i> --></span>
+				</a>
+			</div>			
+		</footer>
+	</div>		
+	<div class="modal" id="modalTerms">
+		<div class="modal-dialog" style="max-width:1040px">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="modal-terms">
+						<h5>개인정보처리방침</h5>
+						<div class="text">
+							4.16민주시민교육원은 개인정보보호법 제30조에 따라 정보주체의 개인정보를 보호하고 이와 관련한 고충을 신속하고 원활하게 처리할 수 있도록 다음과 같이 개인정보처리방침을 수립ㆍ공개합니다.<br>
+							4.16민주시민교육원은 관련 법령의 규정에 따라 수집ㆍ보유 및 처리하는 개인정보를 공공 업무의 적절한 수행과 국민의 권익을 보호하기 위해 적법하고 적정하게 취급합니다.<br>
+							4.16민주시민교육원의 개인정보 처리방침을 변경하는 경우 4.16민주시민교육원 홈페이지를 통하여 공지하겠습니다.
+							<div>
+								<br><br>
+								<p><span><span><span>제1조 (개인정보의 처리 목적, 항목 및 보유기간)</span></span></span></p>
+								<p><span><span>① 4.16민주시민교육원에서는 개인정보를 다음의 목적을 위해 처리합니다. 처리하고 있는 개인정보는 다음의 목적 이외의 용도로 이용되지 않으며, 이용 목적이 변경되는 경우에는 개인정보보호법 제18조에 따라 별도의 동의를 받는 등 필요한 조치를 이행할 예정입니다.</span></span></p>
+								<p><span><span>② 4.16민주시민교육원의 연수 운영·관리 등 소관업무 수행을 위해 처리하는 개인정보의 항목은 다음과 같습니다<br></span></span></p>	
+								<br><br>
+								<p><span><span><span>제1조 (개인정보의 처리 목적, 항목 및 보유기간)</span></span></span></p>
+								<p><span><span>① 4.16민주시민교육원에서는 개인정보를 다음의 목적을 위해 처리합니다. 처리하고 있는 개인정보는 다음의 목적 이외의 용도로 이용되지 않으며, 이용 목적이 변경되는 경우에는 개인정보보호법 제18조에 따라 별도의 동의를 받는 등 필요한 조치를 이행할 예정입니다.</span></span></p>
+								<p><span><span>② 4.16민주시민교육원의 연수 운영·관리 등 소관업무 수행을 위해 처리하는 개인정보의 항목은 다음과 같습니다<br></span></span></p>	
+								<br><br>
+								<p><span><span><span>제1조 (개인정보의 처리 목적, 항목 및 보유기간)</span></span></span></p>
+								<p><span><span>① 4.16민주시민교육원에서는 개인정보를 다음의 목적을 위해 처리합니다. 처리하고 있는 개인정보는 다음의 목적 이외의 용도로 이용되지 않으며, 이용 목적이 변경되는 경우에는 개인정보보호법 제18조에 따라 별도의 동의를 받는 등 필요한 조치를 이행할 예정입니다.</span></span></p>
+								<p><span><span>② 4.16민주시민교육원의 연수 운영·관리 등 소관업무 수행을 위해 처리하는 개인정보의 항목은 다음과 같습니다<br></span></span></p>	
+							</div>	
+					</div>
+					<button class="close" data-dismiss="modal"><span class="hidden">닫기</span><svg class="svg-inline--fa fa-xmark fa-w-10" aria-hidden="true" focusable="false" data-prefix="fa-thin" data-icon="xmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M317.7 402.3c3.125 3.125 3.125 8.188 0 11.31c-3.127 3.127-8.186 3.127-11.31 0L160 267.3l-146.3 146.3c-3.127 3.127-8.186 3.127-11.31 0c-3.125-3.125-3.125-8.188 0-11.31L148.7 256L2.344 109.7c-3.125-3.125-3.125-8.188 0-11.31s8.188-3.125 11.31 0L160 244.7l146.3-146.3c3.125-3.125 8.188-3.125 11.31 0s3.125 8.188 0 11.31L171.3 256L317.7 402.3z"></path></svg><!-- <i class="fa-thin fa-xmark"></i> --></button>
+				</div>
+			</div>
+		</div>	
+	</div>
+</body>
+</html>
