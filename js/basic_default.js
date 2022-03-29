@@ -27,48 +27,22 @@ $(document).ready(function(){
 		}
 	});
 
-	/*GNB*/
-	// function showHeight(element, height){
-	// 	$(".gnb-sub").text( element + "의 높이 값은 " + height + "px.");
-	// }	
-	
+	/*GNB*/		
 	$('.header-menu>ul>li').on('mouseenter',function(){	
-		$('.header').addClass('on');
-		// $('.header-menu>ul>li').removeClass('on');
-		// var $target = $(this).parent();		
-		// $target.addClass('on');	
-		// $('.header').addClass('menu_open');
+		$('.header').addClass('on');	
 		var th = $('#G1').innerHeight()+30;		
 		$('.header .gnb-sub-bg').stop().animate({height:th+"px"},0);
-		// $('.gnb-sub-bg').css('height', 400 + 'px')		
-		// $('.gnb-sub-bg').height(inheight);
-		// $('.gnb-sub-bg').css( 'height', inheight + 'px' );
 		var bodyW = $('body').innerWidth();
 			$('.gnb-sub-bg').width(bodyW);
-	});
-
-	// $('.header-menu > ul > li > a').focus(function(){
-	// 	$('.header').addClass('on');    
-	// 	var bodyW = $('body').innerWidth();
-	// 	$('.gnb-sub-bg').width(bodyW);
-	// });
+	});	
 
 	$('.header-menu>ul>li>a').on('focus',function(){	
-		$('.header').addClass('on');
-		// $('.header-menu>ul>li').removeClass('on');
-		// var $target = $(this).parent();		
-		// $target.addClass('on');	
-		// $('.header').addClass('menu_open');
+		$('.header').addClass('on');		
 		var th = $('#G1').innerHeight()+30;		
 		$('.gnb-sub-bg').stop().animate({height:th+"px"},0);		
 		var bodyW = $('body').innerWidth();
 			$('.gnb-sub-bg').width(bodyW);
 	});
-	
-
-	// $('.header-menu').mouseleave(function(){
-	// 	$('.header').removeClass('on');	
-	// });	
 
 	$('.header-menu').on('mouseleave', function() {
 		$('.header').removeClass('on');	

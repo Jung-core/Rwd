@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="css/aos.css">		
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/all.min.js"></script>
-	<script src="js/basic.js"></script>
+	<script src="js/basic_default.js"></script>
 	<script src="js/common.js"></script>
 	<script src="js/aos.js"></script>
 </head>
@@ -45,7 +45,7 @@
 							</ul> 
 						</li> 
 						<li> <a href="#a"><span>교육원 소개</span></a>
-							<ul class="gnb-sub">   
+							<ul class="gnb-sub" id="G1">   
 								<li class="first"><a href="#a"><span>인사말</span></a></li>
 								<li><a href="#a"><span>설립과정</span></a></li>
 								<li><a href="#a"><span>운영방향</span></a></li>
@@ -64,7 +64,7 @@
 							<li><a href="#a" title="새창으로 이동" target="_blank"><i class="xi-youtube-play"></i><em class="pos">유튜브</em></a></li>
 						</ul>
 					</div>
-					<div class="gnb-sub-bg"></div>
+					<div class="gnb-sub-bg" id="element"></div>
 				</nav>	
 				<div class="utill">
 					<div class="zoom">
@@ -106,7 +106,37 @@
 			<div class="dim_bg"></div>		
 		</header>
 		<section id="container">
-			<div class="contents" style="height:1500px;">contents</div>
+			<div class="contents" style="padding-top:200px;">			
+				<!-- <div class="item" data-aos="fade-up" data-aos-duration="1500">
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente facere atque sit. Quae ad, deserunt cupiditate nihil perspiciatis laboriosam animi praesentium aperiam obcaecati incidunt assumenda minus asperiores molestias alias repellendus!
+				</div>
+				<div class="item" data-aos="flip-left" data-aos-delay="50" data-aos-duration="1200" style="margin-top:50px;">
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente facere atque sit. Quae ad, deserunt cupiditate nihil perspiciatis laboriosam animi praesentium aperiam obcaecati incidunt assumenda minus asperiores molestias alias repellendus!
+				</div>
+				<div class="item" data-aos="flip-left" data-aos-delay="600" data-aos-duration="1200" style="margin-top:50px;">
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente facere atque sit. Quae ad, deserunt cupiditate nihil perspiciatis laboriosam animi praesentium aperiam obcaecati incidunt assumenda minus asperiores molestias alias repellendus!
+				</div>
+				<div class="item" data-aos="flip-left" data-aos-delay="600" data-aos-duration="1200" style="margin-top:50px;">
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente facere atque sit. Quae ad, deserunt cupiditate nihil perspiciatis laboriosam animi praesentium aperiam obcaecati incidunt assumenda minus asperiores molestias alias repellendus!
+				</div> -->
+				<!--
+				<div class="item" data-aos="fade-up">1</div>
+				<div class="item" data-aos="fade-down">2</div>
+				<div class="item" data-aos="fade-right">3</div>
+				<div class="item" data-aos="fade-left">4</div>
+				<div class="content" data-aos="fade-up">
+					<button class="btn js-load-more">Load smth..</button>
+					<div class="content__text js-more-content"></div>
+				</div>//-->
+				<div class="item" data-aos="zoom-in">5</div>
+				<div class="item" data-aos="zoom-out">6</div>
+				<div class="item" data-aos="slide-up">7</div>
+				<div class="item" data-aos="flip-up">8</div>
+				<div class="item" data-aos="flip-down">9</div>
+				<div class="item" data-aos="flip-right">10</div>
+				<div class="item" data-aos="flip-left">11</div>
+
+			</div>
 		</section>
 		<footer>
 			<div class="in">
@@ -145,7 +175,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="top-btn-wrap" style="display:none;">
+			<div class="top-btn-wrap">
 				<a href="#full1" class="top-btn" title="맨 위로 이동하기">
 					<span><svg class="svg-inline--fa fa-arrow-up fa-w-12" aria-hidden="true" focusable="false" data-prefix="fa-thin" data-icon="arrow-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M15.82 204.9l170.5-170.5c3.14-3.14 8.226-3.14 11.37 0l170.5 170.5c3.14 3.14 3.14 8.226 0 11.37c-3.14 3.14-8.226 3.14-11.37 0L200 59.44v412.5c0 4.427-3.595 8.038-8.037 8.038S183.1 476.4 183.1 471.1V59.44L27.19 216.2c-3.14 3.14-8.226 3.14-11.37 0C12.68 213.1 12.68 207.1 15.82 204.9z"></path></svg><!-- <i class="fa-thin fa-arrow-up"></i> --></span>
 				</a>
