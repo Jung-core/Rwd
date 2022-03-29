@@ -170,3 +170,11 @@ footer .in{max-width:calc(100% - 200px); }
 	.logo{width: 128px;height: 30px;}
 	footer .in {max-width: calc(100% - 0px);}
 }
+
+@media screen and (max-width:320px){
+	.header-menu>ul>li>a {font-size: 1.4rem;}
+	.header-menu>ul>li>a>span:after{margin-bottom:3px;}
+	.gnb-sub li a{font-size:1.2rem;}
+	.footer-last .mark li {margin-right: 5px;}
+	.footer-last{padding:0 10px;}
+}
