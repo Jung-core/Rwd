@@ -28,7 +28,7 @@ header{position:fixed;width:100%;top:0px;left:0px;height:100px;background:#fff;b
 .utill .lang a.on {border-bottom: 2px solid #000;font-weight: 600;color: #000;}
 .utill .lang a:last-of-type{margin-right:0px;}
 .gnb-sub-bg {position: absolute;top:100px;right: 50%;transform: translateX(50%);height:0px;background: #fff;transition: height .5s;box-shadow: 0 12px 15px rgba(0,0,0,.05);}
-.gnb-sub{position: absolute;top: 100px;left: 0;/*height: 270px;*/width: 100%;padding-top: 0px;opacity:0;transform:translateY(-15px);transition:all .45s ease-in;}
+.gnb-sub{position: absolute;top: 100px;left: 0;/*height: 270px;*/width: 100%;padding-top: 0px;opacity:0;transform:translateY(-15px);}
 .gnb-sub li {text-align: center;}
 .gnb-sub li a{transition: .2s;padding: 15px 0;display: block;font-size:1.6rem;}
 .gnb-sub li a:hover{color:#fcbc25;}
@@ -108,10 +108,10 @@ footer .in{max-width:calc(100% - 200px); }
 	.gnb-all{display:block;position:relative;top:-3px;margin-left:13px;padding: 3px;}
 	.header-menu {display: block;position: fixed;left: 100%;width: 100%;top: 0;height:100%;background: #fcbc25;transition: .5s;z-index:1;}
 	.logo{width: 178px;height: 45px;}
-	.gnb-sub{display: none;position: static;height: auto;opacity: 1;padding: 20px 42px;margin: 0 -44px;background: #ededed;width: calc(100% + 88px);}
+	.gnb-sub{display: none;position: static;height: auto;opacity: 1;padding: 20px 42px;margin: 0 -44px;background: #ededed;width: calc(100% + 88px);transform:translateY(0px);}
 	.gnb-sub li{text-align:left;}
 	.gnb-sub-bg{display:none;}
-	.header-menu>ul{flex-direction: column;justify-content: flex-start;align-items:flex-start;height: calc(var(--vh, 1vh) * 100 - 120px);overflow-y:scroll;margin-top:65px;padding: 10px 44px 0px;background:#fcfcfc;overflow: auto;}
+	.header-menu>ul{flex-direction: column;justify-content: flex-start;align-items:flex-start;width:100%;height: calc(var(--vh, 1vh) * 100 - 120px);overflow-y:scroll;margin-top:65px;padding: 10px 44px 0px;background:#fcfcfc;overflow: auto;}
 	.header-menu>ul>li{text-align:left;height:auto;width: 100%;}
 	.header-menu>ul>li>a{display: block;height:auto;padding: 12px 0 18px;font-size: 1.8rem;}
 	.header-menu>ul>li>a>span{position:relative;}
