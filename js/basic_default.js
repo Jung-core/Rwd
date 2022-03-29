@@ -127,6 +127,7 @@ $(document).ready(function(){
 		if( window.innerWidth > 1200 ){
 			$('.gnb-sub').attr('style','');
 			$('.header-menu').removeClass('on');
+			$('.dim_bg').removeClass('on');
 		}
 	});
 
