@@ -6,7 +6,7 @@ body.offScroll{position: fixed;height: 100%;overflow: hidden;width: 100%;}
 #container{flex:1 0 auto;padding-top:100px;}
 footer{border-top: 1px solid #e3e3e3;padding:50px 0;}
 header{position:fixed;width:100%;top:0px;left:0px;height:100px;background:#fff;border-bottom:1px solid #d7d7d7;z-index:120;}
-.header.on .gnb-sub{transform:translateY(0px);opacity:1;}
+.header.on .gnb-sub { opacity:1; transition:.55s .15s; }
 /* .header.on .gnb-sub-bg{height:250px;} */
 .header.on .header-menu>ul>li{overflow:visible;}
 .gnb{display:flex;justify-content:space-between;align-items:center;padding:0 20px;max-width:1840px;margin:0 auto;height:100%;z-index:1;}
@@ -28,7 +28,7 @@ header{position:fixed;width:100%;top:0px;left:0px;height:100px;background:#fff;b
 .utill .lang a.on {border-bottom: 2px solid #000;font-weight: 600;color: #000;}
 .utill .lang a:last-of-type{margin-right:0px;}
 .gnb-sub-bg {position: absolute;top:100px;right: 50%;transform: translateX(50%);height:0px;background: #fff;transition: height .5s;box-shadow: 0 12px 15px rgba(0,0,0,.05);}
-.gnb-sub{position: absolute;top: 100px;left: 0;/*height: 270px;*/width: 100%;padding-top: 0px;opacity:0;transform:translateY(-15px);}
+.gnb-sub{position: absolute;top: 100px;left: 0;/*height: 270px;*/width: 100%;padding-top: 0px;opacity:0;}
 .gnb-sub li {text-align: center;}
 .gnb-sub li a{transition: .2s;padding: 15px 0;display: block;font-size:1.6rem;}
 .gnb-sub li a:hover{color:#fcbc25;}
@@ -105,7 +105,7 @@ footer .in{max-width:calc(100% - 200px); }
 }
 @media screen and (max-width:1024px){
 	header {height: 80px;}	
-	.gnb{padding:0 20px;}
+	.gnb{padding:0 20px;background:#fff;}
 	.gnb h1{flex-basis:auto;}
 	.gnb-all{display:block;position:relative;top:-3px;margin-left:13px;padding: 3px;}
 	.header-menu {display: block;position: fixed;left: 100%;width: 100%;top: 0;height:100%;background: #fcbc25;transition: .5s;z-index:1;}
@@ -161,6 +161,7 @@ footer .in{max-width:calc(100% - 200px); }
 	footer .in {max-width: calc(100% - 20px);}
 	#container{padding-top:65px;}
 	.contents{padding-top:25px;}
+	.header.on .gnb-sub {transition: 0s;}
 }
 
 @media screen and (max-width:768px){
